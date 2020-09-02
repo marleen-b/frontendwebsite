@@ -56,11 +56,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** -blauwe piste.-
+**Je startniveau:** blauwe piste
 
-**Je focus:** -surface plane.-
+**Je focus:** surface plane.
 
-**Je opdracht:** - Een herontwerp van de website herinneringenoplinnen. Die ik samen met een team gemaakt heb tijdens het vak Commercieel Ontwerpen.-
+**Je opdracht:** Een herontwerp van de website herinneringenoplinnen. Die ik samen met een team gemaakt heb tijdens het vak Commercieel Ontwerpen.
 
 link naar de website: https://www.herinneringenoplinnen.nl/
 
@@ -75,8 +75,9 @@ link naar de website: https://www.herinneringenoplinnen.nl/
 
 
 **Breakdown-schets(en):**
-(images/breakdownschetsdeel1.png)
-(images/breakdownschetsdeel2.png)
-(images/breakdownschetsdeel3.png)
+![alt text](images/breakdownschetsdeel1.png)
+![alt text](images/breakdownschetsdeel2.png)
+![alt text](images/breakdownschetsdeel3.png)
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+
