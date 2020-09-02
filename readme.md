@@ -66,12 +66,12 @@ link naar de website: https://www.herinneringenoplinnen.nl/
 
 **Screenshot(s)eigen ontwerp:**
 
-(images/eigenontwerpdeel1.png)
-(images/eigenontwerpdeel2.png)
-(images/eigenontwerpdeel3.png)
-(images/eigenontwerpdeel4.png)
-(images/eigenontwerpdeel5.png)
-(images/eigenontwerpdeel6.png)
+![alt text](images/eigenontwerpdeel1.png)
+![alt text](images/eigenontwerpdeel2.png)
+![alt text](images/eigenontwerpdeel3.png)
+![alt text](images/eigenontwerpdeel4.png)
+![alt text](images/eigenontwerpdeel5.png)
+![alt text](images/eigenontwerpdeel6.png)
 
 
 **Breakdown-schets(en):**
