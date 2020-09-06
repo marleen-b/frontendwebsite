@@ -64,6 +64,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 link naar de website: https://www.herinneringenoplinnen.nl/
 
+Waarom heb ik gekozen voor deze website?
+* De website is voor mij persoonlijk hopelijk wat makkelijker te doen.
+* Er staat diverse elementen op de website.
+* Uitdagingen: Coderen in het algemeen, vooral Javascript. Carrousels, van mobile screen naar desktop screen, 
+
 **Screenshot(s)eigen ontwerp:**
 
 ![alt text](images/eigenontwerpdeel1.png)
