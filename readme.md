@@ -24,17 +24,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
 
+-dit ging goed & dit was lastig-
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent-
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
 
 
 ## Voortgang 2 (week 5)
-
--same as voortgang 1-
-
-
-
-## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
@@ -47,6 +54,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
+
+
+## Voortgang 1 (week 3)
+
+### Stand van zaken
+
+-Dit ging goed & dit was lastig:-
+first-of-type lijkt niet te werken
+Aanpak mobile first, tips&trick, hoe pak je dit aan.
+
+
+
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent-
+
+### Agenda voor meeting
+
+-Is er een mogelijkheid om 2n en 3n te selecteren via p:nth-of-type(3n)?
 
 ### Verslag van meeting
 

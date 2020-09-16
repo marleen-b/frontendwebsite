@@ -1,5 +1,107 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+/*BODY*/
+body img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Montserrat;
+    padding: 3em;
+}
+
+/*link naar font bron: https://fonts.google.com/specimen/Montserrat?query=mon&selection.family=Montserrat */
+body h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* NAVIGATIE */
+
+
+/*MAIN*/
+
+/*PRODUCTEN */
+#producten p {
+    font-size: 1em;
+    font-weight: lighter;
+    color: darkturquoise;
+}
+
+img {
+    position: relative;
+}
+
+#producten p:nth-of-type(2n) {
+    background-color: deeppink;
+    color: white;
+    transform: skewY(-10deg);
+    padding: 0.5em;
+    border-radius: 2em 2em 2em 2em;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+/* Is er een mogelijkheid om 2n en 3n te selecteren */
+
+#producten p:nth-of-type(3n) {
+    background-color: deeppink;
+    color: white;
+    padding: 0.5em;
+    position: relative;
+    bottom: 1em;
+    right: 0;
+
+}
+
+/*KLANTENREACTIES */
+#klantenreacties {
+    text-align: center;
+}
+
+
+
+/*NIEUWSBRIEF  */
+#nieuwsbrief {
+    text-align: center;
+
+}
+
+
+
+#formulier,
+input {
+    font-size: 1em;
+    font-weight: normal;
+    color: darkgray;
+}
+
+#inschrijven {
+    background-color: deeppink;
+    color: white;
+    border-color: deeppink;
+
+}
+
+
+/*STELJEVRAAG*/
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+}
