@@ -6,22 +6,25 @@
 }
 
 /*BODY*/
-body img {
-    max-width: 100%;
-}
-
-body {
-    font-family: Montserrat;
-    padding: 3em;
-}
 
 /*link naar font bron: https://fonts.google.com/specimen/Montserrat?query=mon&selection.family=Montserrat */
+body {
+    font-family: Montserrat;
+    margin: 3em;
+    /* alles vormt één kolom */
+}
+
 body h1 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bold;
 }
 
 body h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body h3 {
     font-size: 1em;
     font-weight: normal;
 }
@@ -32,55 +35,70 @@ body h2 {
 /*MAIN*/
 
 /*PRODUCTEN */
+#producten h2,
+p:first-of-type {
+    text-align: center;
+}
+
 #producten p {
     font-size: 1em;
     font-weight: lighter;
     color: darkturquoise;
 }
 
-img {
+#producten img {
     position: relative;
+    max-width: 100%; /*all img worden niet groter dan het scherm zelf*/
+}
+
+#producten p:nth-of-type(2n),
+p:nth-of-type(3n) {
+    background-color: deeppink;
+    color: white;
+    padding: 0.5em;
+    position: absolute;
 }
 
 #producten p:nth-of-type(2n) {
-    background-color: deeppink;
-    color: white;
     transform: skewY(-10deg);
-    padding: 0.5em;
     border-radius: 2em 2em 2em 2em;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
+    top: 2em;
+    right: 1em;
 }
-
-/* Is er een mogelijkheid om 2n en 3n te selecteren */
 
 #producten p:nth-of-type(3n) {
-    background-color: deeppink;
     color: white;
-    padding: 0.5em;
-    position: relative;
-    bottom: 1em;
-    right: 0;
-
+    top: 17em;
+    right: 3em;
 }
 
+
 /*KLANTENREACTIES */
-#klantenreacties {
+#klantenreacties h2,
+p {
     text-align: center;
 }
 
+#klantenreacties img {
+    position: relative;
+    right: 1em;
+    width: 6em;
+}
 
+#klantenreacties a {
+    font-weight: bold;
+    color: darkturquoise;
+    text-decoration: none;
+    position: relative;
+    left: 5em;
+
+}
 
 /*NIEUWSBRIEF  */
 #nieuwsbrief {
     text-align: center;
 
 }
-
-
 
 #formulier,
 input {
@@ -90,18 +108,43 @@ input {
 }
 
 #inschrijven {
-    background-color: deeppink;
     color: white;
+    background-color: deeppink;
     border-color: deeppink;
 
 }
 
-
 /*STELJEVRAAG*/
+#steljevraag h2 {
+    font-size: 1em;
+
+}
+
+/*bron code: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details */
+details {
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+
 
 /*FOOTER*/
-
 footer {
     text-align: center;
     font-size: 0.5em;
+}
+
+
+
+/*INDEX PAGE 2 */
+
+/*INTRO*/
+body #intro {
+    background-image: url("../images/homebackground.jpg");
+    background-position: top 0;
 }

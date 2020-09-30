@@ -46,6 +46,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+Is er een mogelijkheid om 2n en 3n te selecteren via p:nth-of-type(3n)?
+Voor indexpage 2 heeft de eerste section een image op de volledige breedte en staat die vast aan de navigatie, maar omdat ik margin(witruimte) wilde hebben tussen alle sections kan dat niet. Tenzij ik alle sections van index.html apart selecteer in css. Hoe kan ik dit oplossen?
 
 **Screenshot(s):**
 
@@ -63,10 +65,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
-
--Dit ging goed & dit was lastig:-
-first-of-type lijkt niet te werken
 Aanpak mobile first, tips&trick, hoe pak je dit aan.
+Inklapbare items hoe kan je dit het beste doen?
 
 
 
@@ -77,11 +77,18 @@ Aanpak mobile first, tips&trick, hoe pak je dit aan.
 
 ### Agenda voor meeting
 
--Is er een mogelijkheid om 2n en 3n te selecteren via p:nth-of-type(3n)?
+Een agenda maken voor de volgelde meeting
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Chatclub aangemaakt, zodat wij volgende een agenda kunnen opstellen voor de meeting.
+Je mag maar één H1 per pagina gebruiken. Het logo kan je ook in een h1 plaatsen.
+Tip voor mobile first hou het scherm klein en werk daaruit verder.
+Voor inklapbare items kan je het element <details gebruiken.
+Plaats de productenlijst in <article elementen. Dus <article ipv <li
+Bij het formulier zorg ervoor dat het label gekoppeld is aan de input.
+Dit kan je doen door Label for:    
+Ga vooral verder met flexen.
 
 
 
@@ -115,5 +122,5 @@ Waarom heb ik gekozen voor deze website?
 ![alt text](images/breakdownschetsdeel2.png)
 ![alt text](images/breakdownschetsdeel3.png)
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+
 
