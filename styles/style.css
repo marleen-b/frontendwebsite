@@ -10,8 +10,16 @@
 /*link naar font bron: https://fonts.google.com/specimen/Montserrat?query=mon&selection.family=Montserrat */
 body {
     font-family: Montserrat;
-    margin: 3em;
+
     /* alles vormt één kolom */
+
+}
+
+body section,
+body article {
+    margin: 2em;
+    /* witruimte */
+
 }
 
 body h1 {
@@ -29,29 +37,68 @@ body h3 {
     font-weight: normal;
 }
 
+/*HEADER*/
 /* NAVIGATIE */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*elementen komen onder elkaar als het niet meer past*/
+
+}
+
+header nav li {
+    flex-grow: 1;
+    min-width: 6em;
+}
+
+header nav li + li {
+    /*selecteert elke li element dat direct is na een adnere li, zonder dat er een element tussen zit*/
+    border: solid 1px;
+    border-color: transparent;
+}
+
+header nav a {
+    text-decoration: none;
+    display: block;
+    /*a vullen de hele li */
+    line-height: 3.5em;
+    text-align: center;
+    font-weight: bold;
+    color: darkslategrey;
+}
 
 
 /*MAIN*/
 
 /*PRODUCTEN */
-#producten h2,
+#productenoverzicht h2,
 p:first-of-type {
     text-align: center;
 }
 
-#producten p {
+#productenoverzicht img {
+    position: relative;
+    max-width: 100%;
+    /*all img worden niet groter dan het scherm zelf*/
+}
+
+#productenoverzicht article {
+    border: solid;
+    border-color: lightgrey;
+    border-width: thin;
+
+}
+
+#productenoverzicht p {
     font-size: 1em;
     font-weight: lighter;
     color: darkturquoise;
 }
 
-#producten img {
-    position: relative;
-    max-width: 100%; /*all img worden niet groter dan het scherm zelf*/
-}
 
-#producten p:nth-of-type(2n),
+#productenoverzicht p:nth-of-type(2n),
 p:nth-of-type(3n) {
     background-color: deeppink;
     color: white;
@@ -59,18 +106,48 @@ p:nth-of-type(3n) {
     position: absolute;
 }
 
-#producten p:nth-of-type(2n) {
+#product1 p:nth-of-type(2n) {
     transform: skewY(-10deg);
     border-radius: 2em 2em 2em 2em;
-    top: 2em;
+    top: 1em;
     right: 1em;
 }
 
-#producten p:nth-of-type(3n) {
+#product1 p:nth-of-type(3n) {
     color: white;
-    top: 17em;
+    top: 14em;
     right: 3em;
 }
+
+
+
+#product2 p:nth-of-type(2n) {
+    color: white;
+    top: 37em;
+    right: 3em;
+}
+
+
+
+#product3 p:nth-of-type(2n) {
+    color: white;
+    top: 60em;
+    right: 3em;
+}
+
+#product4 p:nth-of-type(2n) {
+    transform: skewY(-10deg);
+    border-radius: 2em 2em 2em 2em;
+    top: 70em;
+    right: 1em;
+}
+
+#product4 p:nth-of-type(3n) {
+    color: white;
+    top: 83em;
+    right: 3em;
+}
+
 
 
 /*KLANTENREACTIES */
@@ -145,6 +222,7 @@ footer {
 
 /*INTRO*/
 body #intro {
+    margin: 0;
     background-image: url("../images/homebackground.jpg");
     background-position: top 0;
 }

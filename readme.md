@@ -46,8 +46,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+
 Is er een mogelijkheid om 2n en 3n te selecteren via p:nth-of-type(3n)?
-Voor indexpage 2 heeft de eerste section een image op de volledige breedte en staat die vast aan de navigatie, maar omdat ik margin(witruimte) wilde hebben tussen alle sections kan dat niet. Tenzij ik alle sections van index.html apart selecteer in css. Hoe kan ik dit oplossen?
+Voor indexpage heeft de eerste een achtergrond image op volle breedte + die vast zit aan de navigatie. Maar op index had ik witruimte tussen alle sections en article door margin. Ik dacht eerst dat ik het zou moeten oplossen met alles apart selecteren, maar heb het opgelost door de section in indexpage een margin te geven van 0. Het enigste wat nu moeten worden opgelost is dat de image volledig zichtbaar moet zijn en niet een deel.
+
+Ik twijfel bij de section productenoverzicht of ik de p op de juiste manier heb gepositioneerd. Nu is de img relative en de p absolute. Of moet het article op position relative. De reden waarom ik twijfel, omdat je grote getallen em gebruik. En dat lijkt mij niet de bedoeling.
 
 **Screenshot(s):**
 
@@ -55,7 +58,12 @@ Voor indexpage 2 heeft de eerste section een image op de volledige breedte en st
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+De navigatie sloopt de position van de badges, Hoe los ik dit op?
+De image op indexpage2 is niet volledig zichtbaar.
+De section productenoverzicht welk element moet ik position:relative meegeven? 
+Moet je flexbox gebruiken op basis van mobile-first? En ook als het dan al goed staat? 
+Ik zit een beetje met wat ik nu moet flexen, productenoverzicht?
+
 
 ### Verslag van meeting
 
