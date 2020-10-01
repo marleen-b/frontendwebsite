@@ -88,6 +88,7 @@ p:first-of-type {
     border: solid;
     border-color: lightgrey;
     border-width: thin;
+    max-height: 
 
 }
 
@@ -105,6 +106,7 @@ p:nth-of-type(3n) {
     padding: 0.5em;
     position: absolute;
 }
+/* Hier staan de kortingsbadges */
 
 #product1 p:nth-of-type(2n) {
     transform: skewY(-10deg);
@@ -221,8 +223,8 @@ footer {
 /*INDEX PAGE 2 */
 
 /*INTRO*/
-body #intro {
+main #intro {
     margin: 0;
     background-image: url("../images/homebackground.jpg");
-    background-position: top 0;
+    height:37.5em;
 }

@@ -7,7 +7,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 1. -https://www.herinneringenoplinnen.nl-
-2. -bron 2-
+2. -https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details -
 3. -...-
 
 
@@ -67,7 +67,17 @@ Ik zit een beetje met wat ik nu moet flexen, productenoverzicht?
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Badges positioneren door article postion: relative mee te geven ipv img
+Let op, want elke product heeft een eigen article.
+image op indexpage heeft background-size en height mee
+Misschien de intro indexpage2 in de header plaatsen ipv main
+Main margin ipv body margin.
+productensection flexen met flex:wrap komen de producten naast elkaar 
+section producten position:relative
+slider images met scroll-snap
+Js interactie waar click je op en kan wat leuks gebeuren(ingeschrijven nieuwsbrief)
+Use overflow:hidden ipv visability:hidden / display:none anders verdwijnt het ook voor een schermlezer.
+
 
 
 ## Voortgang 1 (week 3)
