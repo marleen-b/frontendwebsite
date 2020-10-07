@@ -27,6 +27,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+Flexbox kan de doos in, zo ik heb het gezegd. 
 
 **Screenshot(s):**
 

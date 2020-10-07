@@ -22,6 +22,7 @@ body article {
 
 }
 
+/* fontsize en font-weight h1 t/m h3*/
 body h1 {
     font-size: 1.75em;
     font-weight: bold;
@@ -76,10 +77,10 @@ header nav a {
 #productenoverzicht h2,
 p:first-of-type {
     text-align: center;
+    /*tekst uitlijning producten */
 }
 
 #productenoverzicht img {
-    position: relative;
     max-width: 100%;
     /*all img worden niet groter dan het scherm zelf*/
 }
@@ -88,16 +89,14 @@ p:first-of-type {
     border: solid;
     border-color: lightgrey;
     border-width: thin;
-    max-height: 
-
+    position: relative;
 }
 
-#productenoverzicht p {
+#productenoverzicht p:first-of-type {
     font-size: 1em;
     font-weight: lighter;
     color: darkturquoise;
 }
-
 
 #productenoverzicht p:nth-of-type(2n),
 p:nth-of-type(3n) {
@@ -106,51 +105,44 @@ p:nth-of-type(3n) {
     padding: 0.5em;
     position: absolute;
 }
-/* Hier staan de kortingsbadges */
 
-#product1 p:nth-of-type(2n) {
+/* Kortings badge Custtomshapes */
+#productenoverzicht article:first-of-type p:nth-of-type(2n) {
     transform: skewY(-10deg);
     border-radius: 2em 2em 2em 2em;
-    top: 1em;
-    right: 1em;
+    top: -1em;
+    right: -2em;
 }
 
-#product1 p:nth-of-type(3n) {
-    color: white;
-    top: 14em;
-    right: 3em;
-}
-
-
-
-#product2 p:nth-of-type(2n) {
-    color: white;
-    top: 37em;
-    right: 3em;
-}
-
-
-
-#product3 p:nth-of-type(2n) {
-    color: white;
-    top: 60em;
-    right: 3em;
-}
-
-#product4 p:nth-of-type(2n) {
+/*kortingsbadge Ingelijste foto's */
+#productenoverzicht article:nth-of-type(4n) p:nth-of-type(2) {
     transform: skewY(-10deg);
     border-radius: 2em 2em 2em 2em;
-    top: 70em;
-    right: 1em;
+    top: -1em;
+    right: -2em;
 }
 
-#product4 p:nth-of-type(3n) {
+/* Prijslabels alle producten */
+#productoverzicht article:first-of-type,
+p:last-of-type {
     color: white;
-    top: 83em;
-    right: 3em;
+    bottom: 5em;
+    right: -1em;
 }
 
+/*HOE KAN HET DAT DIT KLOPT?! ALLES STAAT GOED /*
 
+/*flexbox producten*/
+/*HAAL DIT WEG, KLOPT MOBIELVERSIE WEL*/
+main #productenoverzicht {
+    display: flex;
+    justify-content: space-between;
+}
+
+#productenoverzicht article {
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
 
 /*KLANTENREACTIES */
 #klantenreacties h2,
@@ -186,11 +178,18 @@ input {
     color: darkgray;
 }
 
+/*stijling nieuwsbrief knop */
 #inschrijven {
     color: white;
     background-color: deeppink;
     border-color: deeppink;
 
+}
+
+/*HOVERSTIJL nieuwsbrief knop */
+#formulier input:hover {
+    background-color: darkturquoise;
+    border-color: darkturquoise;
 }
 
 /*STELJEVRAAG*/
@@ -218,13 +217,11 @@ footer {
     font-size: 0.5em;
 }
 
-
-
 /*INDEX PAGE 2 */
 
 /*INTRO*/
 main #intro {
     margin: 0;
     background-image: url("../images/homebackground.jpg");
-    height:37.5em;
+    height: 37.5em;
 }
