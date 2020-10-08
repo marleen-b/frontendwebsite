@@ -40,13 +40,26 @@ body h3 {
 
 /*HEADER*/
 /* NAVIGATIE */
+
+/*NIEUWE CLASS AANGEMAAKT DOOR JS */
+header button.showMenu {
+    opacity: 1;
+    /*menu wordt zichtbaar na 'click' */
+}
+
+/* Mogelijke code voor hamburgermenu
+    header nav {
+    position: fixed;
+    nav staat op plek vast, ook bij scrollen 
+    opacity: 1;
+    menu onzichtbaar voor JS 
+    elementen komen onder elkaar als het niet meer past
+} */
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /*elementen komen onder elkaar als het niet meer past*/
-
 }
 
 header nav li {
@@ -98,8 +111,15 @@ p:first-of-type {
     color: darkturquoise;
 }
 
-#productenoverzicht p:nth-of-type(2n),
-p:nth-of-type(3n) {
+#productenoverzicht p:nth-of-type(2n) {
+    background-color: deeppink;
+    color: white;
+    padding: 0.5em;
+    position: absolute;
+}
+
+#productenoverzicht p:nth-of-type(3n) {
+    /*Moet apart, want anders pakt die de 'p' van indexpage 2 ook mee */
     background-color: deeppink;
     color: white;
     padding: 0.5em;
@@ -145,9 +165,10 @@ main #productenoverzicht {
 }
 
 /*KLANTENREACTIES */
-#klantenreacties h2,
-p {
+#klantenreacties p,
+h2 {
     text-align: center;
+    color: black;
 }
 
 #klantenreacties img {
@@ -209,8 +230,6 @@ summary {
     padding: .5em;
 }
 
-
-
 /*FOOTER*/
 footer {
     text-align: center;
@@ -222,6 +241,37 @@ footer {
 /*INTRO*/
 main #intro {
     margin: 0;
-    background-image: url("../images/homebackground.jpg");
+    background-image: url("../images/homebackground.jpg"); /*img geen alt-tekst, omdat dat niet essentieel is of toegevoegde waarde */
     height: 37.5em;
+    line-height: 2em;
+    
+}
+
+#intro a:first-of-type , a:nth-of-type(2) {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: deeppink;
+    border: solid;
+    border-color: deeppink;
+    border-width: medium;
+    padding: 0.5em;
+    position: relative;
+    top: 0;
+    left: 1em;
+}
+
+#intro a:nth-of-type(2) {
+    color: darkslategrey;
+    background-color: transparent;
+    border-color: darkslategrey;
+    top: 0;
+    left: 3em;
+}
+
+#Watzijn h2{
+    text-align: left;
+}
+#Watzijn p{
+    text-align: left;
 }

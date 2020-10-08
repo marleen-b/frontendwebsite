@@ -28,6 +28,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -dit ging goed & dit was lastig-
 Flexbox kan de doos in, zo ik heb het gezegd. 
+Ik probeerde navigatie te laten zien met behulp van JS via button, maar werkt niet. Heb alles al dubbel gecheckt, maar niks laat de navigatie zien na een click. 
+Geprobeerd een hamburgermenu te maken met een button. Maar dat zou niet spannend genoeg zijn. Nauw ik krijg het niet voor elkaar!!
 
 **Screenshot(s):**
 
