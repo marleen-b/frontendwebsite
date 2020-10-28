@@ -11,14 +11,12 @@
 body {
     font-family: Montserrat;
 
-    /* alles vormt één kolom */
-
 }
 
 body section,
 body article {
     margin: 2em;
-    /* witruimte */
+    /* witruimte tussen sections en articles */
 
 }
 
@@ -33,28 +31,38 @@ body h2 {
     font-weight: bold;
 }
 
-body h3 {
-    font-size: 1em;
+body section:nth-of-type(3) p {
     font-weight: normal;
+    font-size: 1em;
 }
 
 /*HEADER*/
+
 /* NAVIGATIE */
+header button {
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color: darkturquoise;
+    border-color: darkturquoise;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: turquoise;
+    border-color: turquoise;
+}
 
 /*NIEUWE CLASS AANGEMAAKT DOOR JS */
-header button.showMenu {
+.showMenu {
     opacity: 1;
     /*menu wordt zichtbaar na 'click' */
 }
 
-/* Mogelijke code voor hamburgermenu
-    header nav {
-    position: fixed;
-    nav staat op plek vast, ook bij scrollen 
-    opacity: 1;
-    menu onzichtbaar voor JS 
-    elementen komen onder elkaar als het niet meer past
-} */
+nav {
+    opacity: 0;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -65,10 +73,6 @@ header nav ul {
 header nav li {
     flex-grow: 1;
     min-width: 6em;
-}
-
-header nav li + li {
-    /*selecteert elke li element dat direct is na een adnere li, zonder dat er een element tussen zit*/
     border: solid 1px;
     border-color: transparent;
 }
@@ -83,10 +87,49 @@ header nav a {
     color: darkslategrey;
 }
 
+header nav a:hover {
+    color: turquoise;
+    cursor: pointer;
+}
+
+@media (min-width:48em) {
+
+    /*wanneer de browser minstens een breedte heeft van 48em, button verdwijnt maar nav wel zichtbaar*/
+    header button {
+        opacity: 0;
+    }
+
+    header nav {
+        opacity: 1;
+    }
+}
 
 /*MAIN*/
+main section img {
+    width: 27em;
+}
+
+main ul li {
+    list-style: none;
+}
 
 /*PRODUCTEN */
+/*flexbox producten*/
+main #productenoverzicht {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#productenoverzicht article {
+    flex-grow: 1;
+    border: solid 1em;
+    border-color: lightgrey;
+    border-width: thin;
+    position: relative;
+}
+}
+
 #productenoverzicht h2,
 p:first-of-type {
     text-align: center;
@@ -95,14 +138,9 @@ p:first-of-type {
 
 #productenoverzicht img {
     max-width: 100%;
+    display: flex;
+    justify-content: center;
     /*all img worden niet groter dan het scherm zelf*/
-}
-
-#productenoverzicht article {
-    border: solid;
-    border-color: lightgrey;
-    border-width: thin;
-    position: relative;
 }
 
 #productenoverzicht p:first-of-type {
@@ -111,31 +149,16 @@ p:first-of-type {
     color: darkturquoise;
 }
 
-#productenoverzicht p:nth-of-type(2n) {
-    background-color: deeppink;
-    color: white;
-    padding: 0.5em;
-    position: absolute;
-}
-
-#productenoverzicht p:nth-of-type(3n) {
-    /*Moet apart, want anders pakt die de 'p' van indexpage 2 ook mee */
-    background-color: deeppink;
-    color: white;
-    padding: 0.5em;
-    position: absolute;
-}
-
 /* Kortings badge Custtomshapes */
-#productenoverzicht article:first-of-type p:nth-of-type(2n) {
+#productenoverzicht article:first-of-type p:nth-of-type(2) {
     transform: skewY(-10deg);
     border-radius: 2em 2em 2em 2em;
     top: -1em;
     right: -2em;
 }
 
-/*kortingsbadge Ingelijste foto's */
-#productenoverzicht article:nth-of-type(4n) p:nth-of-type(2) {
+/*Kortingsbadge Ingelijste foto's */
+#productenoverzicht article:nth-of-type(4) p:nth-of-type(2) {
     transform: skewY(-10deg);
     border-radius: 2em 2em 2em 2em;
     top: -1em;
@@ -143,32 +166,66 @@ p:first-of-type {
 }
 
 /* Prijslabels alle producten */
+#productoverzicht article:first-of-type p:last-of-type {
+    color: white;
+}
+
 #productoverzicht article:first-of-type,
 p:last-of-type {
-    color: white;
     bottom: 5em;
     right: -1em;
 }
 
-/*HOE KAN HET DAT DIT KLOPT?! ALLES STAAT GOED /*
-
-/*flexbox producten*/
-/*HAAL DIT WEG, KLOPT MOBIELVERSIE WEL*/
-main #productenoverzicht {
-    display: flex;
-    justify-content: space-between;
+#productenoverzicht p:nth-of-type(2) {
+    background-color: deeppink;
+    color: white;
+    padding: 0.5em;
+    position: absolute;
 }
 
-#productenoverzicht article {
-    flex-wrap: wrap;
-    flex-grow: 1;
+#productenoverzicht p:nth-of-type(3) {
+    /*Moet apart, want anders pakt die de 'p' van indexpage 2 ook mee */
+    background-color: deeppink;
+    color: white;
+    padding: 0.5em;
+    position: absolute;
 }
+
+/*Animatie Kortingsbadge*/
+/*bron: https://codepen.io/shooft/pen/xxVmpEP */
+@keyframes kortingsbadge {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#productenoverzicht p:nth-of-type(3):hover {
+    animation-name: kortingsbadge;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+#productenoverzicht p:nth-of-type(2):hover {
+    animation-name: kortingsbadge;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
 
 /*KLANTENREACTIES */
 #klantenreacties p,
 h2 {
     text-align: center;
     color: black;
+    margin: 1em;
 }
 
 #klantenreacties img {
@@ -183,13 +240,27 @@ h2 {
     text-decoration: none;
     position: relative;
     left: 5em;
+}
 
+#klantenreacties a:hover {
+    color: turquoise;
+    cursor: pointer;
+}
+
+@media (min-width: 36em) {
+    #klantenreacties p {
+        padding: 0 1em;
+    }
 }
 
 /*NIEUWSBRIEF  */
 #nieuwsbrief {
     text-align: center;
+}
 
+#nieuwsbrief p {
+    font-weight: normal;
+    font-size: 1em;
 }
 
 #formulier,
@@ -200,17 +271,88 @@ input {
 }
 
 /*stijling nieuwsbrief knop */
-#inschrijven {
+form button {
     color: white;
     background-color: deeppink;
     border-color: deeppink;
-
+    font-size: 1em;
 }
 
-/*HOVERSTIJL nieuwsbrief knop */
-#formulier input:hover {
-    background-color: darkturquoise;
-    border-color: darkturquoise;
+form button:hover {
+    background-color: #FF60B6;
+    border-color: #FF60B6;
+    cursor: pointer;
+}
+
+/*Animatie aanmelding nieuwsbrief */
+/*bron: https://codepen.io/shooft/pen/xxVmpEP */
+@keyframes nieuwsbrief {
+    0% {
+        transform: none;
+    }
+
+    10% {
+        transform: scale(1.2, .8);
+    }
+
+    20% {
+        transform: scale(.6, 1.5) translateY(-.25em);
+        color: deeppink;
+    }
+
+    30% {
+        transform: scale(1.3, .7);
+    }
+
+    40% {
+        transform: scale(.9, 1.1);
+    }
+
+    50% {
+        transform: none;
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+/* Class wordt toegevoegd door JS */
+
+#nieuwsbriefanimatie {
+    /*positioneren tekst */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+#nieuwsbriefanimatie div {
+    width: auto;
+    transform-origin: center bottom;
+    animation-name: nieuwsbrief;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+/* De animatie begint eerst bij de 1e letter, dan 2e etc.*/
+#nieuwsbriefanimatie div:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+#nieuwsbriefanimatie div:nth-of-type(2) {
+    animation-delay: .15s;
+}
+
+#nieuwsbriefanimatie div:nth-of-type(3) {
+    animation-delay: .3s;
+}
+
+#nieuwsbriefanimatie:hover div {
+    animation-play-state: running;
 }
 
 /*STELJEVRAAG*/
@@ -230,6 +372,15 @@ summary {
     padding: .5em;
 }
 
+#steljevraag a img {
+    max-width: 2em;
+}
+
+#steljevraag details a {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 /*FOOTER*/
 footer {
     text-align: center;
@@ -241,13 +392,21 @@ footer {
 /*INTRO*/
 main #intro {
     margin: 0;
-    background-image: url("../images/homebackground.jpg"); /*img geen alt-tekst, omdat dat niet essentieel is of toegevoegde waarde */
+    background: url("../images/homebackground.jpg") no-repeat center center fixed;
+    /*img geen alt-tekst, omdat dat niet essentieel is of toegevoegde waarde heeft*/
     height: 37.5em;
+    background-size: cover;
     line-height: 2em;
-    
+
 }
 
-#intro a:first-of-type , a:nth-of-type(2) {
+/*afbeelding in li aanpassing*/
+section ul li img {
+    max-width: 1em;
+}
+
+#intro a:first-of-type,
+a:nth-of-type(2) {
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -269,9 +428,45 @@ main #intro {
     left: 3em;
 }
 
-#Watzijn h2{
+#intro a:first-of-type:hover {
+    background-color: #FF60B6;
+    border-color: #FF60B6;
+    cursor: pointer;
+}
+
+#intro a:nth-of-type(2):hover {
+    color: white;
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+#Watzijn h2 {
     text-align: left;
 }
-#Watzijn p{
+
+#Watzijn p {
     text-align: left;
+}
+
+#Watzijn a {
+    font-weight: bold;
+    color: darkturquoise;
+    text-decoration: none;
+}
+
+#Watzijn a:hover {
+    color: turquoise;
+    cursor: pointer;
+}
+
+/*afbeelding Custtomshapes met afmetingen voor groter scherm */
+@media (min-width: 50em) {
+    main section:nth-of-type(4) img {
+        width: 50em;
+    }
+}
+
+#waarom? h3 {
+    font-weight: bold;
+    font-size: 1.5em;
 }

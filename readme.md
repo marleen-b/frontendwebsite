@@ -6,9 +6,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -https://www.herinneringenoplinnen.nl-
-2. -https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details -
-3. -...-
+1. -https://www.herinneringenoplinnen.nl
+2. -https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details 
+3. -https://codepen.io/shooft/pen/xxVmpEP
 
 
 
@@ -27,11 +27,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
-Flexbox kan de doos in, zo ik heb het gezegd. 
+Flexbox lukte totaal niet.
 Ik probeerde navigatie te laten zien met behulp van JS via button, maar werkt niet. Heb alles al dubbel gecheckt, maar niks laat de navigatie zien na een click. 
-Geprobeerd een hamburgermenu te maken met een button. Maar dat zou niet spannend genoeg zijn. Nauw ik krijg het niet voor elkaar!!
-
-**Screenshot(s):**
+Geprobeerd een hamburgermenu te maken met een button. Maar dat zou niet spannend genoeg zijn.En bovendien kreeg ik dit niet voor elkaar.
 
 -screenshot(s) van hoe ver je bent-
 
@@ -42,6 +40,13 @@ Geprobeerd een hamburgermenu te maken met een button. Maar dat zou niet spannend
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
+Check eerst of de JS ook werkt door te inspecteren in de browser. Wordt er een class toegevoegd na de click? Ja, prima. Nee? kijk wat er niet klopt.
+Bedenk dat je soms twee variabelen moet aanmaken in JS. Één voor het element, waarop je klikt(button). En de andere voor het element waar een class aan moet worden toegevoegd.(nav)
+Voeg de CSS nog toe aan de interactie.
+Om ervoor te zorgen dat de afbeeldingen groot genoeg zijn gebruik je width. Of juist niet te groot worden.
+
+Nog aan zitten voor de beoordelingsgesprek
+Toegankelijkheid(states, hover,active), microinteractie en een klein beetje reponsive. 
 
 
 ## Voortgang 2 (week 5)
